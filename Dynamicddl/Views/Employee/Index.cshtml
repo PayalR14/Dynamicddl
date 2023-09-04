@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Employee.js"></script>
+<h2>Index</h2>
+<input type="text" id="txtfirstname" class="form-control" placeholder="Enter ypor firstname" />
+<br />
+<input type="text" id="txtlastname" class="form-control" placeholder="Enter your lastname" />
+<br />
+<input type="text" id="txtemail" class="form-control" placeholder="Enter your email" />
+<br />
+<input type="text" id="txtaddress" class="form-control" placeholder="Enter your Address" />
+<br />
+<select typeof="text" id="ddlState_Id" class="form-control" onchange="DDLCityChange()"></select>
+<br />
+<select typeof="text" id="ddlCity_Id" class="form-control" ></select>
+<br />
+
+<input type="submit" value="submit" onclick="SaveEmployee()" />
+
+<table id="tblEmp" class="table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>StateName</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
